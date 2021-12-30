@@ -1,12 +1,9 @@
-import math
-
-
 def binary_search(list, item):
     low = 0
     high = len(list) - 1
 
     while low <= high:
-        mid = math.floor((low + high) / 2)
+        mid = (low + high) // 2
         guess = list[mid]
 
         if guess == item:
